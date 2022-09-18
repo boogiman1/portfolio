@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{font-family: 'Noto Sans KR', sans-serif; font-family: 'Raleway', sans-serif;}
+
+.container{width: 1200px; margin: 0 auto; box-sizing: border-box;}
+
+/* float */
+.cf::after{content: ''; display: block; clear: both;}
+.fl{float: left;}
+.fr{float: right;}
+
+/* font */
+.FK{font-family: 'Noto Sans KR';}
+.FE{font-family: 'Raleway', sans-serif;}
+.h2_title{font-family: 'Raleway', sans-serif; color: #333; letter-spacing: 0.02em; font-size: 32px; font-weight: 600; font-style: italic;}
+.h2_title2{font-family: 'Raleway', sans-serif; color: #333; letter-spacing: 2px; font-size: 32px; font-weight: 600; font-style: italic; text-transform: uppercase;}
