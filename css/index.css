@@ -81,12 +81,14 @@
             animation: criss-cross-left 0.8s both;
     -webkit-animation-direction: alternate;
             animation-direction: alternate;
+            animation-timing-function: cubic-bezier(1, 0.28, 0.14, 1);
   }
   .btn:hover:after {
     -webkit-animation: criss-cross-right 0.8s both;
             animation: criss-cross-right 0.8s both;
     -webkit-animation-direction: alternate;
             animation-direction: alternate;
+            animation-timing-function: cubic-bezier(1, 0.28, 0.14, 1);
   }
   @-webkit-keyframes criss-cross-left {
     0% {
