@@ -164,9 +164,9 @@
 #section2 .container .section2_textBox .section2_text:nth-child(odd){width: 50%; margin-bottom: 96px;}
 #section2 .container .section2_textBox .section2_text:nth-child(even){width: 40%;}
 
-#section2 .container .section2_textBox .section2_text h3{color: #333; font-weight: 500; font-style: italic; font-size: 20px; margin-bottom: 12px; letter-spacing: 0.05em;}
+#section2 .container .section2_textBox .section2_text h3{color: #333; font-weight: 500; font-style: italic; font-size: 20px; margin-bottom: 12px; letter-spacing: 0.05em/*  0.8px */;}
 
-#section2 .container .section2_textBox .section2_text p{color: #666; font-size: 16px; letter-spacing: -0.03em;}
+#section2 .container .section2_textBox .section2_text p{color: #666; font-size: 16px; letter-spacing: -0.03em /* -0.48px */;}
 
 #section2 .container .section2_textBox .section2_text p span{letter-spacing: 0; color: #333;}
 
@@ -182,11 +182,15 @@
 
 #section3 .container .skill_boxs{margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: center; padding: 0 41px; box-sizing: border-box;}
 
-#section3 .container .skill_boxs .skill_box{width: 25%;}
+
+#section3 .container .skill_boxs .skill_box{width: 25%; position: relative;}
 
 #section3 .container .skill_boxs .skill_box:nth-child(5),.skill_box:nth-child(6),.skill_box:nth-child(7),.skill_box:nth-child(8){margin-top: 69px;}
 
-#section3 .container .skill_boxs .skill_box .skill_circle{width: 140px; height: 140px; border: 4px solid #ff845b; border-radius: 50%; margin: auto; text-align: center; line-height: 140px; font-size: 18px; color: #333; font-weight: 500;}
+/* 스킬 원 */
+#section3 .container .skill_boxs svg{margin: auto; width: 148px; height: 148px; display: block; fill: none; stroke-width: 4; stroke: #ff845b; transform: rotate(-90deg); stroke-dasharray: 440; stroke-dashoffset: 440; stroke-linecap: round;}
+
+#section3 .container .skill_boxs .skill_box h3{position: absolute; left: 50%; top: 36%; transform: translate(-50%, -50%); font-size: 18px; color: #333; font-weight: 500;}
 
 
 #section3 .container .skill_boxs .skill_box .skill_text{width: 148px; height: 46px; text-align: center; margin: 15px auto 0; line-height: 46px; font-size: 18px; color: #333; font-weight: 500;}
@@ -194,7 +198,13 @@
 /* //#section3 */
 
 /* #section4 */
-#section4{background-color: #f4f4f4;}
-#section4 .container{padding: 114px 0;}
+#section4{background-color: #f4f4f4; padding: 0 101px;}
+#section4 .container{padding: 114px 0; width: 1700px;}
 #section4 .container h2{text-align: center;}
+#section4 .container h3{text-align: center; font-size: 20px; color: #666; font-weight: 500; letter-spacing: 1px; margin: 50px 0 86px;}
+#section4 .container .publ_container{display: flex;}
+#section4 .container .publ_container .publ_box{width: 372.5px; height: 558.75px; margin-right: 70px; overflow: hidden;}
+#section4 .container .publ_container .publ_box:last-child{margin-right: 0;}
+/* #section4 .container .publ_container .publ_box a{width: 372.5px; height: 558.75px;} */
+#section4 .container .publ_container .publ_box a img{width: 100%;}
 /* //#section4 */

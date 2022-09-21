@@ -22,7 +22,23 @@ document.addEventListener('DOMContentLoaded',function(){
     win.addEventListener("scroll",function(e){
         e.preventDefault()
         winSct=this.scrollY;
-        winSct>=320?document.querySelector('header').classList.add('sticky'):document.querySelector('header').classList.remove('sticky')
-        scrollON(winSct)
+        headerHeight=document.querySelector('header').scrollHeight
+        winSct>=headerHeight?document.querySelector('header').classList.add('sticky'):document.querySelector('header').classList.remove('sticky')
+        // scrollON(winSct)
+    })
+
+    // 이미지 이동
+    const hiddens=document.querySelectorAll('.publ_box')
+    const thumbs=document.querySelectorAll('.publ_box img')
+    hiddens.forEach(function(hidden){
+        hidden.addEventListener("mouseenter",function(e){
+            e.preventDefault();
+            console.log(e);
+            const tg=e.target;
+            const tgH=tg.offsetHeight;
+            const tgThumb=tg.firstChild;
+            
+        })
+        console.log(hidden);
     })
 })
