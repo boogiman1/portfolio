@@ -225,7 +225,7 @@
 
 #section4 .container .publ_container .publ_box .publ_name{width: 414px; margin-bottom: 32px; font-weight: 500; font-size: 22px; letter-spacing: -0.01em; color: #111; text-align: center;}
 
-#section4 .container .publ_container .publ_box:nth-child(3) .publ_name{font-weight: 600;}
+#section4 .container .publ_container .publ_box .publ_name.FE{font-weight: 600;}
 
 #section4 .container .publ_container .publ_box .publ_tag{width: 414px; text-align: center;}
 
