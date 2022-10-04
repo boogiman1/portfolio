@@ -44,9 +44,13 @@ document.addEventListener('DOMContentLoaded',function(){
                 boxWrap[2].classList.add('on')
                 boxWrap[3].classList.add('on')
             }
-            if(pageYOffset>=3450||scrollY>=3450){
+            if(pageYOffset>=3600||scrollY>=3600){
                 this.document.querySelector("#section5 .container .design_container .design_text").classList.add('on')
                 this.document.querySelector("#section5 .container .design_container .design_img").classList.add('on')
+            }
+            if(pageYOffset>=4700||scrollY>=4700){
+                this.document.querySelector("#section5-1 .container .publ_box_wrap").classList.add('on')
+                this.document.querySelector("#section5-1 .container h2").classList.add('on')
             }
         })
     })
