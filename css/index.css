@@ -247,7 +247,6 @@
 
 #section5 .container .design_container{display: flex; justify-content: space-between;}
 
-<<<<<<< HEAD
 #section5 .container .design_container .design_img{width: 468px; opacity: 0; transform: translateY(180%); transition:all .8s;}
 #section5 .container .design_container .design_img.on{opacity: 1; transform: translateY(0%); transition:all 1.8s;}
 
@@ -255,13 +254,12 @@
 
 #section5 .container .design_container .design_text{width: 665px; color: #fdfdfd; margin-top: 108px; opacity: 0; transform: translateX(178%); transition:all .8s;}
 #section5 .container .design_container .design_text.on{opacity: 1; transform: translateX(0%); transition:all 1.8s;}
-=======
+
 #section5 .container .design_container .design_img{width: 468px;}
 
 #section5 .container .design_container .design_img img{width: 100%;}
 
 #section5 .container .design_container .design_text{width: 665px; color: #fdfdfd; margin-top: 108px;}
->>>>>>> a8e186552eaf6475a6ed196baf8faab780863e18
 
 #section5 .container .design_container .design_text h3{font-size: 56px; font-weight: 700; letter-spacing: -1px; margin-bottom: 38px;}
 
