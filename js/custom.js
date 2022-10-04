@@ -44,10 +44,13 @@ document.addEventListener('DOMContentLoaded',function(){
                 boxWrap[2].classList.add('on')
                 boxWrap[3].classList.add('on')
             }
+<<<<<<< HEAD
             if(pageYOffset>=3450||scrollY>=3450){
                 this.document.querySelector("#section5 .container .design_container .design_text").classList.add('on')
                 this.document.querySelector("#section5 .container .design_container .design_img").classList.add('on')
             }
+=======
+>>>>>>> a8e186552eaf6475a6ed196baf8faab780863e18
         })
     })
 
