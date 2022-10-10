@@ -268,7 +268,7 @@
 
 #section5 .container .design_container{display: flex; justify-content: space-between; z-index: 1;}
 
-#section5 .container .design_container .design_img{width: 468px; height: 536px; opacity: 0; transform: translateY(180%); transition:all .8s; position: relative; overflow: hidden; background: url(/img/design_container_img.png) no-repeat; background-size: 100% 100%; z-index: 1;}
+#section5 .container .design_container .design_img{width: 468px; height: 536px; opacity: 0; transform: translateY(180%); transition:all .8s; position: relative; overflow: hidden; background: url(../img/design_container_img.png) no-repeat; background-size: 100% 100%; z-index: 1;}
 
   /* 피그마 임베드코드 */
 
