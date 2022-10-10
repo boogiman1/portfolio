@@ -32,3 +32,17 @@ $(function(){
         })
     }
 })
+
+// 팝업
+function myPop(){
+    $('.popup_base').css('height',$(document).height());
+    $('.popup_base').show();
+}
+function closePop(){
+    $('.popup_base').hide();
+}
+const modal=$('.popup_base')
+modal.click(function (e) {
+    e.preventDefault();
+    modal.addClass('close')
+  });
