@@ -70,11 +70,19 @@ document.addEventListener('DOMContentLoaded',function(){
                 boxWrap[2].classList.add('on')
                 boxWrap[3].classList.add('on')
             }
+<<<<<<< HEAD
             if(pageYOffset>=3800||scrollY>=3800){
                 this.document.querySelector("#section5 .container .design_container .design_text").classList.add('on')
                 this.document.querySelector("#section5 .container .design_container .design_img").classList.add('on')
             }
             if(pageYOffset>=4760||scrollY>=4760){
+=======
+            if(pageYOffset>=3600||scrollY>=3600){
+                this.document.querySelector("#section5 .container .design_container .design_text").classList.add('on')
+                this.document.querySelector("#section5 .container .design_container .design_img").classList.add('on')
+            }
+            if(pageYOffset>=4700||scrollY>=4700){
+>>>>>>> 496668312ea90385fea47df928bc03b37ec95d3e
                 this.document.querySelector("#section5-1 .container .publ_box_wrap").classList.add('on')
                 this.document.querySelector("#section5-1 .container h2").classList.add('on')
             }
