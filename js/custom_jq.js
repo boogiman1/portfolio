@@ -34,8 +34,8 @@ $(function(){
     // 
     var o = $(".perspective");
     $("#section1").on("mousemove", function (t) {
-        var e = -($(window).innerWidth() / 2 - t.pageX) / 30,
-            n = ($(window).innerHeight() / 2 - t.pageY) / 10;
+        var e = -($(window).innerWidth() / 2 - t.pageX) / 50,
+            n = ($(window).innerHeight() / 2 - t.pageY) / 30;
         o.attr("style", "transform: translateY(" + e + "px) translateX(" + n + "px);-webkit-transform: translateY(" + e + "px) translateX(" + n + "px);-moz-transform: translateY(" + e + "px) translateX(" + n + "px)");
     });
 })
