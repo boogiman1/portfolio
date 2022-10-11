@@ -31,4 +31,25 @@ $(function(){
             })
         })
     }
+    // 
+    var o = $(".perspective");
+    $("#section1").on("mousemove", function (t) {
+        var e = -($(window).innerWidth() / 2 - t.pageX) / 30,
+            n = ($(window).innerHeight() / 2 - t.pageY) / 10;
+        o.attr("style", "transform: translateY(" + e + "px) translateX(" + n + "px);-webkit-transform: translateY(" + e + "px) translateX(" + n + "px);-moz-transform: translateY(" + e + "px) translateX(" + n + "px)");
+    });
 })
+
+// 팝업
+function myPop(){
+    $('.popup_base').css('height',$(document).height());
+    $('.popup_base').show();
+}
+function closePop(){
+    $('.popup_base').hide();
+}
+const modal=$('.popup_base')
+modal.click(function (e) {
+    e.preventDefault();
+    modal.addClass('close')
+  });

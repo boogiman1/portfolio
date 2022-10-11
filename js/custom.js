@@ -10,6 +10,33 @@ document.addEventListener('DOMContentLoaded',function(){
         })
     }
 
+    const scrollON=(sct)=>{
+        if(sct>=sections[0].offsetTop-320){
+            navOff();
+            document.querySelector('.header .nav ul li:nth-child(1)').classList.add('on')
+        }
+        if(sct>=sections[1].offsetTop-320){
+        // if(sct>=sections[1].scrollHeight-600){
+            navOff();
+            document.querySelector('.header .nav ul li:nth-child(2)').classList.add('on')
+        }
+        if(sct>=sections[2].offsetTop-320){
+            navOff();
+            document.querySelector('.header .nav ul li:nth-child(3)').classList.add('on')
+        }
+        if(sct>=sections[3].offsetTop-320){
+            navOff();
+            document.querySelector('.header .nav ul li:nth-child(4)').classList.add('on')
+        }
+        if(sct>=sections[4].offsetTop-320){
+            navOff();
+            document.querySelector('.header .nav ul li:nth-child(5)').classList.add('on')
+        }
+        if(sct>=sections[5].offsetTop-320){
+            navOff();
+            document.querySelector('.header .nav ul li:nth-child(6)').classList.add('on')
+        }
+    }
     nav.forEach((el)=>{
         el.addEventListener("click",function(e){
             e.preventDefault()
@@ -24,9 +51,8 @@ document.addEventListener('DOMContentLoaded',function(){
         winSct=this.scrollY;
         headerHeight=document.querySelector('header').scrollHeight
         winSct>=headerHeight?document.querySelector('header').classList.add('sticky'):document.querySelector('header').classList.remove('sticky')
-        // scrollON(winSct)
+        scrollON(winSct)
     })
-
     // 컨텐츠 스크롤 시 나오게
     window.addEventListener('load',function(){
         addEventListener('scroll',function(){
@@ -39,16 +65,16 @@ document.addEventListener('DOMContentLoaded',function(){
                 boxWrap[1].classList.add('on')
 
             }
-            if(pageYOffset>=2800||scrollY>=2800){
+            if(pageYOffset>=3000||scrollY>=3000){
                 var boxWrap = document.querySelectorAll("#section4 .container .publ_container .publ_box")
                 boxWrap[2].classList.add('on')
                 boxWrap[3].classList.add('on')
             }
-            if(pageYOffset>=3600||scrollY>=3600){
+            if(pageYOffset>=3800||scrollY>=3800){
                 this.document.querySelector("#section5 .container .design_container .design_text").classList.add('on')
                 this.document.querySelector("#section5 .container .design_container .design_img").classList.add('on')
             }
-            if(pageYOffset>=4700||scrollY>=4700){
+            if(pageYOffset>=4760||scrollY>=4760){
                 this.document.querySelector("#section5-1 .container .publ_box_wrap").classList.add('on')
                 this.document.querySelector("#section5-1 .container h2").classList.add('on')
             }
