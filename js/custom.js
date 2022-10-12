@@ -82,19 +82,17 @@ document.addEventListener('DOMContentLoaded',function(){
     })
 
     // top_btn
-    // const topBtn=document.querySelector('.top_btn');
-    // const circle0=document.querySelector('.top_btn .circle0');
-    // topBtn.children.forEach((el)=>{
-    //     el.addEventListener('click',function(e){
-    //         e.preventDefault()
-    //         document.querySelector(el.firstChild.getAttribute("href")).scrollIntoView({behavior:"smooth"})
-    //     })
-    //     circle0.addEventListener('click',function(e){
-    //         e.preventDefault();
-    //         if(circle0){
-    //             circle0.classList.add('on');
-    //         }
-    //         else{circle0.classList.remove('on');}
-    //     })
-    // })
+    const topBtn=document.querySelector('.top_btn a');
+    window.addEventListener("scroll",function(){
+        let topBtnY = this.scrollY;
+        if (topBtnY>=350) {
+            topBtn.classList.add('visible')
+        } else {
+            topBtn.classList.remove('visible')
+        }
+    })
+    topBtn.addEventListener("click",function(e){
+        e.preventDefault();
+        document.querySelector(topBtn.getAttribute("href")).scrollIntoView({behavior:"smooth"})
+    })
 })
