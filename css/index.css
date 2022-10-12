@@ -415,7 +415,11 @@ iframe{ display: block; position: absolute; width: 326px; height: 745px; left: -
 /* //.footer */
 
 /* .top_btn */
+<<<<<<< HEAD
 .top_btn a{width:64px; height: 64px; position: fixed; right:112px; bottom: 48px; color: #ff845b; border: 1px solid #ff845b; border-radius: 50%; text-align: center; line-height: 64px; font-size: 20px; font-weight: 500;  opacity: 0; transition: all .4s;}
+=======
+.top_btn a{width:64px; height: 64px; position: fixed; right:112px; bottom: 48px; color: #ff845b; border: 2px solid #ff845b; border-radius: 50%; text-align: center; line-height: 64px; font-size: 18px; font-weight: 500; background-color: #fdfdfd; opacity: 0; transition: all .4s;}
+>>>>>>> 07d63edbfa7a3727390664e25137fbb945d446b9
 
 .top_btn a.visible{opacity: 1; transition: all .4s;}
 
