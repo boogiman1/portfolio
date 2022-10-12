@@ -233,7 +233,7 @@
 
 #section4 .container .publ_container .publ_box:nth-child(3), .publ_box:nth-child(4){margin-top: 140px;}
 
-#section4 .container .publ_container .publ_box .publ_box_wrap{width: 460px; margin: 0 28px;}
+#section4 .container .publ_container .publ_box .publ_box_wrap{width: 461px; margin: 0 28px;}
 #section4 .container .publ_container .publ_box.on{opacity: 1; transition: all .8s; transform: translateY(0);}
 
 #section4 .container .publ_container .publ_box .publ_box_wrap>div:first-child{position: relative; margin-bottom: 44px;}
